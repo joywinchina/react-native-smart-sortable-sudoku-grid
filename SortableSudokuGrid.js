@@ -137,19 +137,12 @@ class SortableSudokuGrid extends Component {
     }
 
     componentWillReceiveProps (nextProps) {
-        let { sortable, dataSource, } = nextProps
-        let { sortable: lastSortable,  dataSource: lastDataSource, } = this.props
-        let newState
-        if (sortable !== lastSortable) {
-            !newState && (newState = {})
-            newState.sortable = sortable
-        }
-        if (dataSource !== lastDataSource) {
-            !newState && (newState = {})
-            newState.dataSource = dataSource
-        }
-        newState.containerHeight= this.createHeight(nextProps),
-        newState && this.setState(newState)
+      let sortable = nextProps.sortable
+        if (sortable !== this.props.sortable) {
+          this.setState({
+          sortable,
+        })    
+      }
     }
 
     componentWillUnmount () {
