@@ -485,4 +485,4 @@ class SortableSudokuGrid extends Component {
     return this.state.dataSource
   }
 }
-// export default TimerEnhance(SortableSudokuGrid)
+export default TimerEnhance(SortableSudokuGrid)
