@@ -223,7 +223,7 @@ class SortableSudokuGrid extends Component {
         draggingCell.component.startScaleAnimation({
           scaleValue: cellScale.value,
         })
-      }, delay)
+      }, 0)
     }
   }
 
