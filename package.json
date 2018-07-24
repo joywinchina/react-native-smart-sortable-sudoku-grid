@@ -1,6 +1,6 @@
 {
-  "name": "react-native-smart-sortable-sudoku-grid",
-  "version": "1.0.5",
+  "name": "joywinchina-react-native-smart-sortable-sudoku-grid",
+  "version": "0.1.0",
   "description": "A smart sortable sudoku grid for React Native apps",
   "main": "SortableSudokuGrid.js",
   "scripts": {
